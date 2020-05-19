@@ -1,0 +1,497 @@
+/*Colours & fonts
+#ff80ab - main pink   - #ff4081 darker pink
+#fd988e - salmon      - #fd6767 darker salmon
+#b388ff - violet      - #7c4dff darker violer
+#ffe57f pastel yellow - #ffd740 darker yellow
+
+#880e4f dark pink plum
+
+font-family: 'Abril Fatface', cursive;
+font-family: 'Raleway', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,400;0,700;1,300&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    overflow-x:hidden;
+}
+
+main {
+    text-align: center;
+}
+
+p {
+    color: #fae7ed;
+    font-size: 1rem;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+
+  /*  - - - - - - - - NAV - - - -  - - - - - */
+
+  nav {
+    position: absolute;
+    top: 1rem;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color:  #f06292;
+}
+
+nav a:hover{
+    color: #ff5252;
+    scale: 1.1;
+}
+
+/*  - - - - - - - - HERO - - - -  - - - - - */
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(header.jpg), linear-gradient(-45deg,#ff80ab, #ff5252);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 8rem;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 10px;
+    background: -webkit-linear-gradient(55deg,#ff80b5, #ff5252);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.move1 { margin-left: 6rem; }
+
+.move2 { margin-left: 12rem; }
+
+/*  - - - - - - - - ABOUT - - - -  - - - - - */
+
+#about {
+    height: 100vh;
+    background: #fd988e;
+    display: grid;
+    align-content: center;
+}
+
+.abt {
+    margin: auto;
+    padding: 5rem;
+    max-width: 1600px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    color: #fd6767;
+    font-size: 5rem;
+}
+
+.about-vid {
+    padding:0 5rem 0 0;
+}
+
+iframe {
+    border:none;
+    border-radius: 25px;
+    box-shadow: 5px 3px #fd6767;
+}
+
+/*  - - - - - - - - PRODUCT- - - -  - - - - - */
+.f1wrapper {
+    display: grid;
+    align-content: center;
+    height: 100vh;
+    background: #ff80b5;
+}
+
+.filler1 {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    align-items: center;
+}
+
+.filler-img {
+    padding: 5rem;
+}
+
+.filler-img img {
+    border: none;
+    border-radius: 25px;
+    width: 85%;
+    box-shadow: 5px 3px #f06292;
+}
+.filler-text {
+    padding:5rem;
+    margin: auto 0;
+}
+.filler-text h2 {
+    color: #f06292
+}
+
+/*  - - - - - - - - SERVICES - - - -  - - - - - */
+.swrapper {
+    width: 100vw;
+    background:#7c4dff;
+}
+
+.services {
+    max-width: 1400px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.services-text h2 {
+    padding-top:2rem;
+    color:#ad82f8;;
+}
+
+.services-text {
+padding-bottom:4rem;
+}
+
+.services-text h4 {
+    color: #f5b2c8;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:0.5rem;
+    justify-items: center;
+}
+
+.card {
+    width: 20vw;
+    height: 50vh;
+    background-color:#ceb6f8;
+    padding:1rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 5px 3px #8056c9;;
+}
+
+.card:hover {
+    scale:1.1;
+}
+
+
+.cards h4  {
+    color:#333;
+    font-style: italic;
+    text-transform: none;
+    padding:1rem;
+}
+
+h3 {
+    color:#f5f0ff;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ad82f8;
+    padding-bottom: 0.75rem;
+}
+
+li {
+    color: #6e45b6;
+    padding:0.5rem 2rem;
+    text-align: left;
+}
+
+button {
+    margin-top: 0.5rem;
+    background-color: #f5b2c8;
+    font-weight: 900;
+    color: #6e45b6;
+    border: 1px solid  #6e45b6;
+    border-radius: 15px;
+    box-shadow: 3px 1.5px #6e45b6;
+    padding: 0.5rem;
+}
+button:hover{
+    scale: 1.1;
+}
+
+h5 {
+    padding: 3rem;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
+    color: #f1daff
+}
+
+/*  - - - - - - - - CONTACT FORM- - - -  - - - - - */
+.contact {
+    background-color: #88b4fa; /*#efa0fd; */
+    padding-top:5rem
+}
+
+.contact h2 {
+    color: #5593ff;/* #c067cf; */
+}
+
+.cform {
+    max-width: 1400px;
+    height: 80vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.cform img {
+    width: 70%;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 5px 3px #5593ff;
+}
+
+form {
+    align-self: center;
+    background-color: #b3cefa;
+    padding:2rem;
+    border: none;
+    border-radius: 25px;
+}
+
+input,textarea {
+    width: 15vw;
+    background: none;
+    border: none;
+    border-bottom: 3px solid #5593ff;
+    font-size: 1.5rem;
+    color: #555;
+    padding: 1rem;
+}
+
+textarea {
+    width: 50vw;
+    margin:1rem;
+}
+
+input[type=submit] {
+    margin-top: 1.5rem;;
+    background-color: #f7cddb;
+    color: #c067cf;
+    border: none;
+    border-radius: 25px;
+}
+
+input[type=submit]:hover {
+    background-color: #ffa1c5;
+    border: none;
+    border-radius: 25px;
+}
+
+/*  - - - - - - - - FOOTER - - - -  - - - - - */
+
+footer {
+    text-align: center;
+    background-color: #ff80b5;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h6 {
+    font-family: 'Abril Fatface', cursive;
+    color:#555;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding-right: 2rem;
+}
+
+footer img {
+    height: 5vh;
+    padding:0.5rem;
+}
+
+
+
+@media screen and (max-width:1060px) {
+    .htext { margin:0;}
+
+    h1 { font-size: 9vw; }
+
+    .card {
+        width: 22vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:770px) {
+    /*  - - - - - - - - HERO - - - -  - - - - - */
+    nav a { font-size: 0.9rem; }
+
+    header {
+        height: 100vh;
+        background-position: 65%;
+    }
+
+    .htext { margin:0; }
+
+    h1 { font-size: 10vw;}
+
+    .move1, .move2 { margin-left: 0; }
+
+ /*  - - - - - - - - ABOUT - - - -  - - - - - */
+.abt {
+    padding:2rem;
+    grid-template-columns: 1fr;
+}
+
+iframe { margin-left:2rem; }
+
+p {
+    font-size: 0.9rem;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+/*  - - - - - - - - PRODUCT- - - -  - - - - - */
+.filler1 {
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.filler-img {
+    order:2;
+    padding: 1rem;
+    width: 75%;
+}
+
+.filler-text { padding:1rem; }
+
+/*  - - - - - - - - SERVICES - - - -  - - - - - */
+
+.services { height:auto; }
+
+.services-text { padding-bottom:2rem; }
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.card {
+    width: 65vw;
+    height: auto;
+    margin: 2rem;
+}
+/*  - - - - - - - - CONTACT FORM- - - -  - - - - - */
+.cform {
+    grid-template-columns: 1fr;
+    height: 65vh;
+}
+.cform  img {
+    display: none;
+}
+
+/*  - - - - - - - - FOOTER - - - -  - - - - - */
+footer { height: 10vh;}
+
+h6 {
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+}
+
+
+
+@media screen and (max-width:500px) {
+    /*  - - - - - - - - HERO - - - -  - - - - - */
+    header {
+        background-position: 70%;
+    }
+
+    .htext {
+        /*transform: rotate(-90deg);*/
+        /*margin-left: -6rem;*/
+        margin-top: -15rem;
+        }
+
+    h1 {
+        display: inline-block;
+        font-size: 25vw;
+        letter-spacing: -1px;
+    }
+
+    .move1 {
+        font-size: 20vw;
+        margin-top: -2rem;
+    }
+
+    .move2 {
+        font-size: 12vw;
+        margin-top: -1.2rem;
+    }
+
+ /*  - - - - - - - - ABOUT - - - -  - - - - - */
+ .abt {
+    padding:1rem;
+    grid-template-columns: 1fr;
+}
+
+/*  - - - - - - - - SERVICES - - - -  - - - - - */
+.card {
+    width: 75vw;
+    height: 40vh;
+    margin: 1rem;
+}
+
+/*  - - - - - - - - CONTACT FORM- - - -  - - - - - */
+.cform { height: 75vh;}
+
+form {
+    display : flex;
+    flex-direction: column;
+}
+
+input,textarea {
+    width: 60vw;
+    font-size: 1.25rem;
+}
+
+textarea {
+    width: 58vw;
+    margin-top: 3rem;
+}
+
+
+input[type=submit] {
+    padding: 0.15rem;
+    margin: 1.5rem auto;
+}
+
+}
