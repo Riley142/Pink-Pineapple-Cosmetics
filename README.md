@@ -4,4 +4,4 @@
 
 Simple responsive static one-page product page website
 
-![](scrnsh.png)
+![](pink.png)
